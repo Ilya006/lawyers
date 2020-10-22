@@ -1,29 +1,3 @@
-// .header 
-//   
-//   &__wrap 
-//     display: flex
-//     align-items: center
-//     justify-content: space-between
-//     height: 105px
-//   &__logo 
-//     display: flex
-//     flex-direction: column
-//     align-items: center
-//     justify-content: center
-//     height: 70px
-//     padding-left: 85px
-//     background: url('../images/dest/logo/logo.png') no-repeat left
-//     font-size: 16px
-//     font-weight: 400
-//     color: #0A1243
-//     &--large
-//       font-size: 33px
-//   &__menu
-//     position: relative
-//     top: -12px
-// 
-
-      
 .header
   position: fixed
   top: 0
@@ -169,4 +143,7 @@
     &__burger.active span
       transform: rotate(-45deg)
       margin-bottom: 25%
-  
+
+@media ( max-width: 768px)
+  .header__navigation
+    top: 85px
