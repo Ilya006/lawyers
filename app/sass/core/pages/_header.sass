@@ -7,10 +7,12 @@
   z-index: 50
   @media  ( max-width: 768px )
     height: 80px
+
   &__wrap
     height: 105px
     @media  ( max-width: 768px )
       height: 80px
+
   &__logo
     display: flex
     flex-direction: column
@@ -29,6 +31,7 @@
       font-size: 14px
     &:hover, &:active
       text-decoration: none
+
   &__nav 
     display: flex
     justify-content: space-between
@@ -39,6 +42,7 @@
       height: 100%
       &:hover
         color: #4782C6
+
 .logo-body
   display: flex
   align-items: center
@@ -56,6 +60,7 @@
   @media  ( max-width: 576px)
     display: none
     visibility: hidden
+
   &__num
     font-size: 30px
     font-weight: 700
@@ -78,13 +83,16 @@
   display: none
   visibility: hidden
   align-items: flex-end
+
   &__wrap
     display: flex
     flex-direction: column
+
   &__text 
     color: #0A1243
     font-size: 13px
     font-weight: 400
+
   &__burger
     position: relative
     width: 35px
@@ -106,6 +114,7 @@
       height: 3px
       background-color: #0A1243
       transition: all .5s
+
 .nav__phone
   display: none
   overflow: hidden
@@ -126,11 +135,13 @@
       transition: all .5s
       &.active
         right: 5px
+
     &__nav
       flex-direction: column
       justify-content: flex-end
       & a
         margin: 10px 0
+        
   .menu
     display: block
     visibility: visible
