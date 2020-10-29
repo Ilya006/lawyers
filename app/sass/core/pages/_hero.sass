@@ -4,7 +4,7 @@
   height: 78vh
   display: flex
   align-items: center
-  @media ( max-height: 540px )
+  @media ( max-height: 465px )
     height: 100%
   &__wrap 
     display: flex
@@ -59,12 +59,7 @@
     color: #6B6B6B
     font-size: 21px
     font-weight: 400
-  &__img
-    max-width: 100%
-    & img
-      display: block
-      height: auto
-      max-width: 100%
+    margin-bottom: 30px
   &__btn
     position: relative
     max-width: 285px
@@ -81,5 +76,17 @@
       top: -5px
       box-shadow: 0 8px 13px -7px rgba(0,0,0,0.7)
 
-
-        
+.hero__col--right
+  position: absolute
+  right: 0
+  & img
+    display: block
+    max-width: 100%
+    @media ( max-width: 1295px )
+      max-width: 70%
+.hero__body
+  display: flex
+.hero__body
+  display: flex
+  justify-content: space-between
+  align-items: center

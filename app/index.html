@@ -9,6 +9,8 @@
 </head>
 <body>
 
+  
+
   <header class="header">
     <div class="container">
       <div class="row align-items-center justify-content-between header__wrap">
@@ -64,9 +66,9 @@
       </div>
 
       <div class="container">
-        <div class="row align-items-center hero__body">
+        <div class="hero__body">
 
-          <div class="col">
+          <div class="hero__col--left">
             <div class="hero__content">
               <h1 class="hero__title"><span>Грамотная помощь юристов</span><br>в Москве и области</h1>
               <div class="hero__subtitle">Консультируем. Готовим документы. Представляем интересы в суде.</div>
@@ -85,19 +87,145 @@
             </div>
           </div>
 
-          <div class="col-md-4 d-none d-lg-block col">
-            <div class="hero__img">
-              <img src="images/dest/hero/hero-img.png" alt="">
-            </div>
+          <div class="hero__col--right d-lg-block d-sm-none">
+            <img src="images/dest/hero/hero-img.png" alt="">
           </div>
 
         </div>
       </div>
     </section>
-    
 
-    <section class=""></section>
-    <section class=""></section>
+    <section class="section special">
+      <div class="container">
+        <h2 class="section-title">Наша специализация</h2>
+      
+
+        <div class="specialization">
+          <div class="row justify-content-between">
+
+            <div class="col-4 row-flex">
+              <div class="specialization__inner">
+                <svg class="icon icon-home" xmlns="http://www.w3.org/2000/svg">
+                  <use href="home.svg#home"></use>
+                </svg>
+                <div class="specialization__item">
+                  <div class="specialization__content">
+                    <h3 class="specialization__title">Жилые споры</h3>
+                    <p class="specialization__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac, dolor platea netus pulvinar.</p>
+                    <span class="specialization__detailed">Подробнее</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 row-flex">
+              <div class="specialization__inner">
+              <svg class="icon icon-home" xmlns="http://www.w3.org/2000/svg">
+                <use href="home.svg#deal"></use>
+              </svg>
+                <div class="specialization__item">
+                  <div class="specialization__content">
+                    <h3 class="specialization__title">Сделки с недвижимостью</h3>
+                    <p class="specialization__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac, dolor platea netus pulvinar.</p>
+                    <span class="specialization__detailed">Подробнее</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 row-flex">
+              <div class="specialization__inner">
+                <svg class="icon icon-family" xmlns="http://www.w3.org/2000/svg">
+                  <use href="home.svg#family"></use>
+                </svg>
+                <div class="specialization__item">
+                  <div class="specialization__content">
+                    <h3 class="specialization__title">Сделки с недвижимостью</h3>
+                    <p class="specialization__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac, dolor platea netus pulvinar.</p>
+                    <span class="specialization__detailed">Подробнее</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 row-flex">
+              <div class="specialization__inner">
+                <svg class="icon icon-inheritance">
+                  <use href="home.svg#inheritance"></use>
+                </svg>
+                <div class="specialization__item">
+                  <div class="specialization__content">
+                    <h3 class="specialization__title">Наследство</h3>
+                    <p class="specialization__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac, dolor platea netus pulvinar.</p>
+                    <span class="specialization__detailed">Подробнее</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 row-flex">
+              <div class="specialization__inner">
+                <svg class="icon icon-disputes">
+                  <use href="home.svg#disputes"></use>
+                </svg>
+                <div class="specialization__item">
+                  <div class="specialization__content">
+                    <h3 class="specialization__title">Трудовые споры</h3>
+                    <p class="specialization__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac, dolor platea netus pulvinar.</p>
+                    <span class="specialization__detailed">Подробнее</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 row-flex">
+              <div class="specialization__inner">
+                <svg class="icon icon-disputes">
+                  <use href="home.svg#location"></use>
+                </svg>
+                <div class="specialization__item">
+                  <div class="specialization__content">
+                    <h3 class="specialization__title">Земельные вопросы</h3>
+                    <p class="specialization__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac, dolor platea netus pulvinar.</p>
+                    <span class="specialization__detailed">Подробнее</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="specialization__btn">посмотреть все услуги</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="feedback__content">
+              <h3 class="feedback__title">Вам нужна помощь юриста? <span class="feedback__title--sm">Доверьте нам решение вашего вопроса!</span></h3>
+              <div class="feedback__subtitle">Помимо консультирования, мы также оказываем услуги по составлению юридических документов и полное представительство интересов клиента в суде.</div>
+            </div>
+            
+          </div>
+          <div class="col-4 feedback__absolute">
+            <form action="#" class="form feedback__form">
+              <div class="form__inner">
+                <h3 class="form__title">Заявка на консультацию</h3>
+                <input class="form__input form__input--name" name="userName" placeholder="Ваше имя" type="text">
+                <input class="form__input form__input--phone" name="userPhone" placeholder="Ваш телефон" type="tel">
+                <input class="form__btn" type="button" value="заказать звонок">
+                <div class="form__policy">
+                  <input class="form__policy--input" id="policy-checkbox" name="userPolicy" type="checkbox" checked>
+                  <label class="form__policy--label" for="policy-checkbox">Вы соглашаетесь с условиями обработки персональных данных <a href="#">(ознакомиться)</a></label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
