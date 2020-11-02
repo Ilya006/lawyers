@@ -4,8 +4,9 @@
   height: 78vh
   display: flex
   align-items: center
-  @media ( max-height: 465px )
+  @media ( max-height: 662px )
     height: 100%
+    margin-top: 120px
 
   &__wrap 
     display: flex
@@ -36,7 +37,7 @@
         display: block
         align-items: center
         visibility: visible
-        margin-top: 50px
+        margin-top: 20px
         & a
           width: 50px
           height: 50px
@@ -50,15 +51,23 @@
       margin-left: 0
 
   &__title
+    &--wrap
+      display: block
+      margin-bottom: 10px
+  &__title
+    margin: 0
     font-weight: 700
     color: #0A1243
-    font-size: 36px
     text-transform: uppercase
     line-height: 50px
-    margin: 0
-    margin-bottom: 10px
-    & span
+    &--bg
       font-size: 46px
+      @media ( max-width: 1271px )
+        font-size: 36px 
+    &--sm
+      font-size: 36px
+      @media ( max-width: 1271px )
+        font-size: 30px
 
   &__subtitle
     color: #6B6B6B
@@ -89,19 +98,24 @@
       background-color: #3b77bb
       outline: none
 
-.hero__col--right
-  position: absolute
-  right: 0
-  & img
-    display: block
-    max-width: 100%
-    @media ( max-width: 1295px )
-      max-width: 70%
+  &__col--right
+    position: relative
+    right: 67px
+    top: -70px
+    width: 130%
+    @media ( max-width: 1360px )
+      width: 100%
+      right: 40px
+    @media ( max-height: 662px )
+      top: 0
+      
+    & img
+      display: block
+      max-width: 100%
 
-.hero__body
-  display: flex
-  
-.hero__body
-  display: flex
-  justify-content: space-between
-  align-items: center
+.my-col
+  padding: 0
+
+.hero__title--sm
+  @media ( max-wight: 1271px )
+    font-size: 20px
