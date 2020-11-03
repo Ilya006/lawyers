@@ -19,13 +19,24 @@
 
   &__lines
     position: absolute
-    left: 0
+    left: 0  
     top: 63px
     width: 70px
-    height: calc( 3 * calc( 100% / 4 ) - 9px )
+    height: calc( 3 * calc( 100% / 4 ) + 5px )
     border: 2px dashed #C4C4C4
     border-right: none
     z-index: 1
+    @media ( max-width: 1199px )
+      height: calc( 3 * calc( 100% / 4 ) - 20px )
+      left: 15px
+    @media ( max-width: 991px )
+      top: 46px
+      height: calc( 3 * calc( 100% / 4 ) - 8px ) 
+      left: auto
+      width: 40px
+      right: -40px
+      border-left: none
+      border-right: 2px dashed #C4C4C4
 
   &__item
     margin-bottom: 10px
@@ -46,7 +57,9 @@
 
   &__inner  
     display: flex
-    padding: 42px 0 42px 0
+    padding: 42px 10px 42px 0
+    @media ( max-width: 991px )
+      padding: 25px 0 25px 10px
 
   &__number 
     position: relative
@@ -66,6 +79,15 @@
       top: 50%
       display: block
       background-color: #4C74A7
+    @media ( max-width: 991px )
+      order: 1
+      padding-left: 0
+      padding-right: 20px
+      margin-right: 0
+      &::after
+        width: 20px
+        left: auto
+        right: 0
 
   &__subtitle
     margin-bottom: 6px

@@ -5,28 +5,40 @@
   height: 105px
   width: 100%
   z-index: 50
-  @media  ( max-width: 768px )
+  @media  ( max-width: 1199px )
     height: 80px
 
   &__wrap
     height: 105px
-    @media  ( max-width: 768px )
+    @media  ( max-width: 1199px )
       height: 80px
 
   &__logo
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    height: 70px
-    margin-left: 15px
+    position: relative
+    padding-left: 85px
     font-size: 16px
     font-weight: 400
     color: #0A1243
+    &::after
+      contain: ''
+      position: absolute;
+      left: 0;
+      top: -5px;
+      content: '';
+      width: 70px;
+      height: 70px;
+      display: block;
+      background: url(../images/dest/logo/logo.png) no-repeat;
+      background-size: contain;
     &--large
+      display: block
       font-size: 33px
-      @media  ( max-width: 768px )
-        font-size: 25px
+      line-height: 1
+    @media  ( max-width: 1199px )
+      padding-left: 60px
+      &::after
+        width: 50px
+        background-position-y: 30%
     @media  ( max-width: 768px )
       font-size: 14px
     &:hover, &:active
@@ -67,8 +79,8 @@
     color: #0A1243
     &:hover, &:active
       text-decoration: none
-    @media  ( max-width: 768px )
-      font-size: 20px
+    @media  ( max-width: 1199px )
+      font-size: 24px
       
   &__feedback
     text-decoration: underline

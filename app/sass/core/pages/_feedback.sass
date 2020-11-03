@@ -5,15 +5,26 @@
   &-2
     background: #1D3B5D  url('../images/dest/feedback/bg-mirror.png') no-repeat
     background-position-x: right
+  @media ( max-width: 991px )
+    background-size: cover
 
   &__absolute
     position: relative
+    @media ( max-width: 1199px )
+      right: 0
 
   &__form
     position: absolute
     top: 0
     right: 0
     transform: translateY(-50%)
+    @media ( max-width: 1199px )
+      left: 0
+    @media ( max-width: 991px )
+      right: 0
+    &-2
+      @media ( max-width: 991px )
+        left: 0
 
   &__content
     margin: 70px 0 70px
