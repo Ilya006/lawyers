@@ -68,10 +68,11 @@
   display: flex
   flex-direction: column
   text-align: right
-  margin-right: 10px
   @media  ( max-width: 576px)
     display: none
     visibility: hidden
+  // @media ( max-width: 991px )
+  //   margin-right: 10px
 
   &__num
     font-size: 30px
@@ -94,7 +95,6 @@
 .menu
   display: none
   visibility: hidden
-  align-items: flex-end
 
   &__wrap
     display: flex
@@ -155,7 +155,10 @@
         margin: 10px 0
         
   .menu
-    display: block
+    position: relative
+    top: -4px
+    display: flex
+    justify-content: center
     visibility: visible
     width: 70px
     &__burger.active::after

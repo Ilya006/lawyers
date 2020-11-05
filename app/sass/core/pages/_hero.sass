@@ -24,6 +24,8 @@
   &__body
     @media ( max-width: 991px )
       margin-left: -62px
+    @media ( max-width: 768px )
+      margin-left: 0
 
   &__wrap 
     display: flex
@@ -56,6 +58,8 @@
         & a
           width: 50px
           height: 50px
+    @media ( max-width: 768px )
+      display: none
 
   &__content
     display: flex
@@ -71,6 +75,9 @@
       margin-bottom: 10px
       @media ( max-width: 991px )
         text-align: center
+      @media ( max-width: 768px )
+        margin-top: 30px
+
   &__title
     margin: 0
     font-weight: 700
@@ -119,6 +126,8 @@
     @media ( max-width: 991px )
       margin: 0 auto
       width: 100%
+    @media ( max-width: 768px )
+      margin-bottom: 30px
 
   &__col--right
     position: relative

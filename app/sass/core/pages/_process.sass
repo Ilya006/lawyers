@@ -6,6 +6,13 @@
     font-weight: 500
     color: #0A1243
     margin-bottom: 70px
+    &--hidden
+      display: none
+      @media ( max-width: 991px )
+        display: block
+        text-align: center
+        margin-bottom: 45px
+      
 
   &__img  
     display: flex
@@ -16,6 +23,9 @@
     display: flex
     flex-direction: column
     padding-left: 55px
+    @media ( max-width: 768px )
+      padding: 0
+
 
   &__lines
     position: absolute
@@ -30,13 +40,11 @@
       height: calc( 3 * calc( 100% / 4 ) - 20px )
       left: 15px
     @media ( max-width: 991px )
-      top: 46px
-      height: calc( 3 * calc( 100% / 4 ) - 8px ) 
-      left: auto
-      width: 40px
-      right: -40px
-      border-left: none
-      border-right: 2px dashed #C4C4C4
+      height: calc( 3 * calc( 100% / 4 ) - 3px )
+    @media ( max-width: 991px )
+      height: calc( 3 * calc( 100% / 4 ) - 8px )
+    @media ( max-width: 768px )
+      display: none
 
   &__item
     margin-bottom: 10px
@@ -58,8 +66,7 @@
   &__inner  
     display: flex
     padding: 42px 10px 42px 0
-    @media ( max-width: 991px )
-      padding: 25px 0 25px 10px
+
 
   &__number 
     position: relative
@@ -79,15 +86,6 @@
       top: 50%
       display: block
       background-color: #4C74A7
-    @media ( max-width: 991px )
-      order: 1
-      padding-left: 0
-      padding-right: 20px
-      margin-right: 0
-      &::after
-        width: 20px
-        left: auto
-        right: 0
 
   &__subtitle
     margin-bottom: 6px
