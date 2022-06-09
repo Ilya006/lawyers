@@ -1,0 +1,89 @@
+.answer
+  &__title
+    margin-top: 100px
+    margin-bottom: 30px
+  @media ( max-width: 768px )
+    margin-top: 300px
+
+  &__item
+    padding: 20px 39px 20px 50px
+    border: 1px solid #D9D9D9
+    & ~ .answer__item
+      margin-top: 20px
+    @media ( max-width: 768px )
+      padding: 10px 15px 10px 20px
+
+  &__label
+    display: flex
+    align-items: center
+    justify-content: space-between
+    cursor: pointer
+
+  &__content
+    position: relative
+    display: none
+
+  &__subtitle
+    display: inline
+    margin: 0
+    padding-bottom: 7px
+    font-size: 24px
+    font-weight: 700
+    line-height: 40px
+    &--active
+      color: #4782C6
+    @media ( max-width: 768px )
+      line-height: 1.2
+
+  &__icon
+    position: relative
+    display: inline-block
+    width: 20px
+    height: 20px
+    margin-left: 10px
+    right: 0
+    top: -4px
+    background-color: transparent
+    &::before
+      content: ''
+      position: absolute
+      display: block
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      width: 20px
+      height: 2px
+      background-color: #0A1243
+      transition: all .3s ease-in
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 2px
+      height: 20px
+      background-color: #0A1243
+      transition: all .3s ease-in
+    &--active
+      &::before
+        top: 48%
+        transform: rotate(45deg)
+        background-color: #4782C6
+      &::after
+        left: 42%
+        transform: rotate(45deg)
+        background-color: #4782C6
+
+  &__text
+    display: block
+    position: relative
+    padding-top: 0
+    font-size: 16px
+    font-weight: 300
+    color: #6B6B6B
+    line-height: 1.31
+    & p
+      position: relative
+      display: block
